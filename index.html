@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phone Search</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+    <!-- bootstrap file add  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome file add  -->
+    <script
+      src="https://kit.fontawesome.com/475a18f4c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My Css file link  -->
+  </head>
+  <body>
+    <main class="container">
+      <!-- heading of website  -->
+      <h1 class="text-center display-2 fw-normal my-5 text-success">hello</h1>
+      <!-- search box area start  -->
+      <div class="input-group mb-3 my-5 w-50 mx-auto">
+        <input
+          id="search-input"
+          type="text"
+          class="form-control"
+          placeholder="Enter phone name !"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button class="btn btn-primary" type="button" id="search-button" onclick="loadData()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- search box area end  -->
+      <!-- content details area Start -->
+      
+        <div class="col-4 mx-auto my-5" id="details">
+          
+        </div>
+      
+       
+      <!-- content details area End -->
+      <!-- content display area  Start-->
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 " id="container">
+        <!-- <div class="col ">
+          <div class="card info p-1">
+            <img src="pic1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead
+              </p>
+              <button class="btn btn-info text-center">hello</button>
+            </div>
+          </div>
+        </div> -->
+        
+      </div>
+
+      <!-- content display area  End-->
+    </main>
+    <script src="phone-search.js"></script>
+  </body>
 </html>
