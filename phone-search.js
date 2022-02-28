@@ -48,7 +48,7 @@ const displayPhoneDetials = (phone) => {
     <div class="card p-1">
             <img src="${phone.image}" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">${phone.phone_name}</h5>
               
               <p class="card-text">
                 <span><b>Release-Date:</b> ${phone.releaseDate}</span><br>
