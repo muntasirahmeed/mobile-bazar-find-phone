@@ -16,7 +16,7 @@ const phoneLoad = () => {
       .then((data) => phoneDisplay(data.data));
   }
 };
-
+//  after search display details area 
 const phoneDisplay = (phones) => {
   const phonesArray = phones.slice(0, 20);
   if (phonesArray.length == 0) {
