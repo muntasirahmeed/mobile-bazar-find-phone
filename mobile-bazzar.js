@@ -49,14 +49,14 @@ const phoneDisplay = (phones) => {
     });
   }
 };
-
+// after button click passing id/Slug in this function
 const showDetails = (details) => {
   const url = `https://openapi.programming-hero.com/api/phone/${details}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayDetails(data.data));
 };
-
+// After explore button click display phone all information area 
 const displayDetails = (details) => {
   console.log(details);
   const image = document.getElementById("phone-img");
