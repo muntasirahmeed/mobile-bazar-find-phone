@@ -4,70 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phone Search</title>
-    <!-- bootstrap file add  -->
+    <title>MOBILE BAZZAR</title>
+    <!-------------------- bootstrap link ----------------------->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- font awesome file add  -->
+    <!---------------------- Font Awesome link-------------------------->
     <script
       src="https://kit.fontawesome.com/475a18f4c4.js"
       crossorigin="anonymous"
     ></script>
-    <!-- My Css file link  -->
+    <!---------------------- css link-------------------------->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="container">
-      <!-- heading of website  -->
-      <h1 class="text-center display-2 fw-normal my-5 text-success">hello</h1>
-      <!-- search box area start  -->
-      <div class="input-group mb-3 my-5 w-50 mx-auto">
+
+  <body class="container">
+    <!--------------------- Search input ------------------------>
+    <header>
+      <div class="logo">
+        <img src="smartphone.png" alt="" />
+        <h2 class="mt-3">
+          <span class="me-2 coloring-text">MOBILE</span>
+          <span class="text-warning">BAZZAR</span>
+        </h2>
+      </div>
+      <div class="input-group mb-5 w-50 mt-4 mx-auto">
         <input
-          id="search-input"
+          id="input-field"
           type="text"
-          class="form-control"
+          class="form-control p-3"
           placeholder="Enter phone name !"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
-        <button class="btn btn-primary" type="button" id="search-button" onclick="loadData()">
+        <button
+          onclick="phoneLoad()"
+          class="btn btn-warning text-white py-3 px-4"
+          type="button"
+          id="button-addon2"
+        >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
+    </header>
+    <!-- Error massage  -->
+    <div>
+      <h3
+        id="error-msg1"
+        class="text-danger mt-5 mx-auto fw-bold text-center"
+      ></h3>
+      <h3
+        id="error-msg2"
+        class="text-success mt-5 mx-auto fw-bold text-center"
+      ></h3>
+    </div>
 
-      <!-- search box area end  -->
-      <!-- content details area Start -->
-      
-        <div class="col-4 mx-auto my-5" id="details">
-          
-        </div>
-      
-       
-      <!-- content details area End -->
-      <!-- content display area  Start-->
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 " id="container">
-        <!-- <div class="col ">
-          <div class="card info p-1">
-            <img src="pic1.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead
-              </p>
-              <button class="btn btn-info text-center">hello</button>
-            </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div id="details" class="modal-body">
+            <div id="phone-img" class="text-center mb-4"></div>
+            <table class="table border" id="table"></table>
           </div>
-        </div> -->
-        
+        </div>
       </div>
+    </div>
+    <!-- phone img and title -->
+    <section>
+      <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </section>
 
-      <!-- content display area  End-->
-    </main>
-    <script src="phone-search.js"></script>
+    <!------------------------------------ bootstrap bundle ----------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!------------------------------------ js link --------------------------->
+    <script src="mobile-bazzar.js"></script>
   </body>
 </html>
