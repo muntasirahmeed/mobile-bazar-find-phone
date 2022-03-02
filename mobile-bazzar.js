@@ -1,3 +1,4 @@
+// Loading data from API and add search option 
 const phoneLoad = () => {
   const inputField = document.getElementById("input-field");
   const inputValue = inputField.value;
